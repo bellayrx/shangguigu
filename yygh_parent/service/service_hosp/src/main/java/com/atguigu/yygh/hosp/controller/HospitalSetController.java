@@ -18,6 +18,7 @@ import java.util.List;
 import java.util.Random;
 
 @Api(tags = "医院管理")
+@CrossOrigin
 @RestController
 @RequestMapping("/admin/hosp/hospitalSet")
 public class HospitalSetController {
@@ -34,7 +35,7 @@ public class HospitalSetController {
     }
     //删除
     @ApiOperation(value = "逻辑删除")
-    @DeleteMapping("{id}")
+    @DeleteMapping("/{id}")
     public Result removeHospSet(@PathVariable Long id){
         boolean b = service.removeById(id);
         if(b){
@@ -65,6 +66,7 @@ public class HospitalSetController {
             wrapper.eq("hoscode",hospitalSetQueryVo.getHoscode());
         }
         //調用方法
+        //
         Page<HospitalSet> page1 = service.page(page, wrapper);
         return Result.ok(page1);
     }

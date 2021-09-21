@@ -1,3 +1,4 @@
+/*
 package com.atguigu.yygh.model.hosp;
 
 import com.alibaba.fastjson.JSONObject;
@@ -11,20 +12,24 @@ import lombok.Data;
 import org.springframework.data.mongodb.core.index.Indexed;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+*/
 /**
  * <p>
  * Hospital
  * </p>
  *
  * @author qy
- */
+ *//*
+
 @Data
 @ApiModel(description = "Hospital")
 @Document("Hospital")
 public class Hospital extends BaseMongoEntity {
 	
 	private static final long serialVersionUID = 1L;
-	
+	*/
+/**//*
+
 	@ApiModelProperty(value = "医院编号")
 	@Indexed(unique = true) //唯一索引
 	private String hoscode;
@@ -70,3 +75,4 @@ public class Hospital extends BaseMongoEntity {
 
 }
 
+*/

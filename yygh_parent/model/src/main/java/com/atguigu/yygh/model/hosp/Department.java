@@ -1,3 +1,4 @@
+/*
 package com.atguigu.yygh.model.hosp;
 
 import com.atguigu.yygh.model.base.BaseEntity;
@@ -12,13 +13,15 @@ import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.util.List;
 
+*/
 /**
  * <p>
  * Department
  * </p>
  *
  * @author qy
- */
+ *//*
+
 @Data
 @ApiModel(description = "Department")
 @Document("Department")
@@ -48,3 +51,4 @@ public class Department extends BaseMongoEntity {
 
 }
 
+*/
