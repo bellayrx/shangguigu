@@ -1,4 +1,3 @@
-/*
 package com.atguigu.yygh.model.base;
 
 import com.baomidou.mybatisplus.annotation.IdType;
@@ -35,4 +34,3 @@ public class BaseMongoEntity implements Serializable {
     @Transient //被该注解标注的，将不会被录入到数据库中。只作为普通的javaBean属性
     private Map<String,Object> param = new HashMap<>();
 }
-*/

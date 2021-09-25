@@ -1,4 +1,3 @@
-/*
 package com.atguigu.yygh.model.hosp;
 
 import com.alibaba.fastjson.JSONArray;
@@ -16,14 +15,6 @@ import org.springframework.util.StringUtils;
 import java.util.Date;
 import java.util.List;
 
-*/
-/**
- * <p>
- * RegisterRule
- * </p>
- *
- * @author qy
- *//*
 
 @Data
 @ApiModel(description = "预约规则")
@@ -48,11 +39,6 @@ public class BookingRule {
 	@ApiModelProperty(value = "预约规则")
 	private List<String> rule;
 
-	*/
-/**
-	 *
-	 * @param rule
-	 *//*
 
 	public void setRule(String rule) {
 		if(!StringUtils.isEmpty(rule)) {
@@ -62,4 +48,4 @@ public class BookingRule {
 
 }
 
-*/
+
